@@ -17,7 +17,7 @@ if [ "$2" = 'r' ];then
 	arch=x86_64
 elif [ "$2" = 'd' ];then
 	dstr='d'
-	arch=amd64
+	arch=arm64
 else
 	if [ "`which dpkg 2>nul`" != '' ];then
 	    	dstr='d'
@@ -68,11 +68,11 @@ if [ $dstr = 'r' ];then
 elif [ $dstr = 'd' ];then
 	if [ "$RELEASE_NUM" = "0" ]
 	then
-		SRC_NAME=linux-4.4-amd64.deb
+		SRC_NAME=linux-4.4-arm64.deb
 	else
-		SRC_NAME=`echo NUM-linux-4.4-amd64.deb | eval sed 's/NUM/"$RELEASE_NUM"/'`
+		SRC_NAME=`echo NUM-linux-4.4-arm64.deb | eval sed 's/NUM/"$RELEASE_NUM"/'`
 	fi
-	DST_NAME=`echo TEMP1.amd64.TEMP2 | eval sed -e 's/TEMP1/"$RELEASE_NUM"/' -e 's/TEMP2/"$PACK_FORMAT"/'`
+	DST_NAME=`echo TEMP1.arm64.TEMP2 | eval sed -e 's/TEMP1/"$RELEASE_NUM"/' -e 's/TEMP2/"$PACK_FORMAT"/'`
 fi
 
 

@@ -30,7 +30,7 @@ brscan: \
 	sh makepackage 1 r
 	sh makepackage 1 d
 	mkdir -p ../RELEASE
-	cp -p linux-4.4-amd64/brscan-*.deb  ../RELEASE
+	cp -p linux-4.4-arm64/brscan-*.deb  ../RELEASE
 #	cp -p linux-4.4-x86_64/brscan-*.rpm ../RELEASE
 
 brscan2: \
@@ -50,12 +50,12 @@ brscan2: \
 	sh makepackage 2 d
 #	sh makepackage 2 r
 	mkdir -p ../RELEASE
-	cp -p linux-4.4-amd64/brscan2-*.deb ../RELEASE
+	cp -p linux-4.4-arm64/brscan2-*.deb ../RELEASE
 #	cp -p linux-4.4-x86_64/brscan2-*.rpm ../RELEASE
 
 
 clean1:
-	rm -fR  linux-4.4-amd64/brscan*
+	rm -fR  linux-4.4-arm64/brscan*
 	rm -fR  linux-4.4-x86_64/brscan*
 	rm -fR brscan
 	rm -f  Brsane.ini            
@@ -64,7 +64,7 @@ clean1:
 
 clean2:
 	rm -fR  linux-4.4-x86_64/brscan2*
-	rm -fR  linux-4.4-amd64/brscan2*
+	rm -fR  linux-4.4-arm64/brscan2*
 	rm -fR brscan2
 	rm -f  Brsane2.ini           
 	rm -f  ext1.ini     
