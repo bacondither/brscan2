@@ -1775,8 +1775,8 @@ shlibpath_var=
 shlibpath_overrides_runpath=unknown
 version_type=none
 dynamic_linker="$host_os ld.so"
-sys_lib_dlsearch_path_spec="/lib /usr/lib"
-sys_lib_search_path_spec="/lib /usr/lib /usr/local/lib"
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/aarch64-linux-gnu"
+sys_lib_search_path_spec="/lib /usr/lib /usr/lib/aarch64-linux-gnu /usr/local/lib"
 file_magic_cmd=
 file_magic_test_file=
 deplibs_check_method='unknown'
@@ -1839,8 +1839,8 @@ bsdi4*)
   deplibs_check_method='file_magic ELF [0-9][0-9]*-bit [ML]SB (shared object|dynamic lib)'
   file_magic_cmd=/usr/bin/file
   file_magic_test_file=/shlib/libc.so
-  sys_lib_search_path_spec="/shlib /usr/lib /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
-  sys_lib_dlsearch_path_spec="/shlib /usr/lib /usr/local/lib"
+  sys_lib_search_path_spec="/shlib /usr/lib /usr/lib/aarch64-linux-gnu /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
+  sys_lib_dlsearch_path_spec="/shlib /usr/lib /usr/lib/aarch64-linux-gnu /usr/local/lib"
   export_dynamic_flag_spec=-rdynamic
   # the default ld.so.conf also contains /usr/contrib/lib and
   # /usr/X11R6/lib (/usr/X11 is a link to /usr/X11R6), but let us allow
